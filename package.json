@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-arcgis-princewilliam",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Prince William County GIS — Prince William County, Virginia open geospatial data (ArcGIS).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-321cb98397b08039c70372aca5f05d13bc1fbd0e1d2b09f5c7e11dec34940e2f",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-37e58104b30c0c6f9189ca20648723a6940fa1d715d29f36592f8da0b37f03ef",
+    "sourceCommit": "454041882179fae560c06e770b6b7a2f33970015"
   }
 }
