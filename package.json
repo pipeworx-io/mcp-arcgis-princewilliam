@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-arcgis-princewilliam",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Prince William County GIS — Prince William County, Virginia open geospatial data (ArcGIS).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-arcgis-princewilliam": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "arcgis-princewilliam"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-arcgis-princewilliam.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/arcgis-princewilliam",
   "pipeworx": {
-    "sourceHash": "v1-f119b990cc0ca380843e9056829bd171eae5f6c642974664ce45e1e7788d52f0",
-    "sourceCommit": "93c7d52ace03a2bb9aee5e6024f6858adab0dd04"
+    "mode": "gateway",
+    "slug": "arcgis-princewilliam",
+    "gatewaySlug": "arcgis-princewilliam",
+    "sourceHash": "v1-22ee3ace3ba51f51a19f116f11f4da59c0c0d847a6cb57795062ed74894a3a08",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
